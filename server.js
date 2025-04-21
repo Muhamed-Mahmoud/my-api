@@ -167,7 +167,7 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const SECRET_KEY = 'your_secret_key';
 
 app.use(express.json());
